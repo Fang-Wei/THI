@@ -4,12 +4,12 @@ rm(list=ls(all=TRUE))
 
 setwd("D:/BusDataTest/")
 
-BUS <- read.csv("市區公車匯入Cube_v2.csv",encoding="UTF-8-BOM", stringsAsFactors = FALSE)
+BUS <- read.csv("Cube_v2.csv",encoding="UTF-8-BOM", stringsAsFactors = FALSE)
 
-country <- "嘉義市" #設定縣市
-direction <- "1"  #設定去返程
+country <- "" 
+direction <- "1"  
 
-txtpath <- paste("D:/BusDataTest/", country, direction, "/進入R/Node_ID", sep = "")
+txtpath <- paste("D:/BusDataTest/", country, direction, "/R/Node_ID", sep = "")
 txtlist <- list.files( path = txtpath, pattern="*.txt")
 n <- length(txtlist)
 txtlist2 <- character()
@@ -22,5 +22,5 @@ for (i in 1:n) {
   BUS[a,12] <- c
 }
 
-write.csv(BUS, file="市區公車匯入Cube_v2.csv", row.names = FALSE)
+write.csv(BUS, file="Cube_v2.csv", row.names = FALSE)
 
