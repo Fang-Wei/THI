@@ -4,11 +4,11 @@ rm(list=ls(all=TRUE))
 
 setwd("D:/BusDataTest/")
 
-HWB <- read.csv("¤½¸ô«È¹B¶×¤JCube_v2.csv",encoding="UTF-8-BOM", stringsAsFactors = FALSE)
+HWB <- read.csv("Â¤Â½Â¸Ã´Â«ÃˆÂ¹BÂ¶Ã—Â¤JCube_v2.csv",encoding="UTF-8-BOM", stringsAsFactors = FALSE)
 
-direction <- "1"  #³]©w¥hªðµ{
+direction <- "1"  
 
-txtpath <- paste("D:/BusDataTest/", direction, "/¶i¤JR/Node_ID", sep = "")
+txtpath <- paste("D:/BusDataTest/", direction, "/Â¶iÂ¤JR/Node_ID", sep = "")
 txtlist <- list.files( path = txtpath, pattern="*.txt")
 n <- length(txtlist)
 txtlist2 <- character()
@@ -22,5 +22,5 @@ for (i in 1:n) {
   HWB[a,12] <- c
 }
 
-write.csv(HWB, file="¤½¸ô«È¹B¶×¤JCube_v2.csv", row.names = FALSE)
+write.csv(HWB, file="Cube_v2.csv", row.names = FALSE)
 
