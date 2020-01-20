@@ -1,8 +1,8 @@
 rm(list=ls(all=TRUE))
 
 #########################################################################
-country <- "台南市" #設定縣市
-direction <- "1"  #設定去返程
+country <- ""
+direction <- "1"
 
 csvpath <- paste("D:/BusDataTest/", country, "/", direction, sep = "")
 setwd(csvpath)
