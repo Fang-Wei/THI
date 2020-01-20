@@ -2,22 +2,22 @@ setwd("D:/BusDataTest/")
 
 rm(list=ls(all=TRUE))
 
-YUN_0 <- read.csv("YUN_0.csv",encoding="UTF-8-BOM") #¶³ªL_0
-YUN_1 <- read.csv("YUN_1.csv",encoding="UTF-8-BOM") #¶³ªL_1
-CYI_0 <- read.csv("CYI_0.csv",encoding="UTF-8-BOM") #¹Å¸q¥«_0
-CYI_1 <- read.csv("CYI_1.csv",encoding="UTF-8-BOM") #¹Å¸q¥«_1
-CYQ_0 <- read.csv("CYQ_0.csv",encoding="UTF-8-BOM") #¹Å¸q¿¤_0
-CYQ_1 <- read.csv("CYQ_1.csv",encoding="UTF-8-BOM") #¹Å¸q¿¤_1
-TNN_0 <- read.csv("TNN_0.csv",encoding="UTF-8-BOM") #»O«n_0
-TNN_1 <- read.csv("TNN_1.csv",encoding="UTF-8-BOM") #»O«n_1
-KHH_0 <- read.csv("KHH_0.csv",encoding="UTF-8-BOM") #°ª¶¯_0
-KHH_1 <- read.csv("KHH_1.csv",encoding="UTF-8-BOM") #°ª¶¯_1
-PIF_0 <- read.csv("PIF_0.csv",encoding="UTF-8-BOM") #«ÌªF_0
-PIF_1 <- read.csv("PIF_1.csv",encoding="UTF-8-BOM") #«ÌªF_1
+YUN_0 <- read.csv("YUN_0.csv",encoding="UTF-8-BOM")
+YUN_1 <- read.csv("YUN_1.csv",encoding="UTF-8-BOM")
+CYI_0 <- read.csv("CYI_0.csv",encoding="UTF-8-BOM")
+CYI_1 <- read.csv("CYI_1.csv",encoding="UTF-8-BOM")
+CYQ_0 <- read.csv("CYQ_0.csv",encoding="UTF-8-BOM")
+CYQ_1 <- read.csv("CYQ_1.csv",encoding="UTF-8-BOM")
+TNN_0 <- read.csv("TNN_0.csv",encoding="UTF-8-BOM")
+TNN_1 <- read.csv("TNN_1.csv",encoding="UTF-8-BOM")
+KHH_0 <- read.csv("KHH_0.csv",encoding="UTF-8-BOM")
+KHH_1 <- read.csv("KHH_1.csv",encoding="UTF-8-BOM")
+PIF_0 <- read.csv("PIF_0.csv",encoding="UTF-8-BOM")
+PIF_1 <- read.csv("PIF_1.csv",encoding="UTF-8-BOM")
 
 #########################################################################
-#¸ê®Æ_0
-country <- c("¶³ªL¿¤", "¹Å¸q¥«", "¹Å¸q¿¤", "¥x«n¥«", "°ª¶¯¥«", "«ÌªF¿¤")
+#æˆˆî†_0
+country <- c("", "", "", "", "", "")
 country_english <- c("YUN", "CYI", "CYQ", "TNN", "KHH", "PIF")
 data_0 <- list(YUN_0, CYI_0, CYQ_0, TNN_0, KHH_0, PIF_0)
 
@@ -30,7 +30,7 @@ for (j in 1:6) {
   }
 }
 
-#¸ê®Æ_1
+#æˆˆî†_1
 data_1 <- list(YUN_1, CYI_1, CYQ_1, TNN_1, KHH_1, PIF_1)
 
 for (j in 1:6) {
