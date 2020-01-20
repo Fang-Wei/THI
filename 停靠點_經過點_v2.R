@@ -1,9 +1,9 @@
 rm(list=ls(all=TRUE))
 
 #########################################################################
-direction <- "1"  #設定去返程
+direction <- "1"  
 
-dbfpath <- paste("D:/BusDataTest/", direction, "/進入R/DBAF", sep = "")
+dbfpath <- paste("D:/BusDataTest/", direction, "/R/DBAF", sep = "")
 
 if (file.exists(paste(dbfpath, "/Node_ID", sep = ""))) {
   setwd(dbfpath)
